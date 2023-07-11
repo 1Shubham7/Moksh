@@ -7,10 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
         <title>Blog- Depression & Suicide</title>
-        <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.png" href="../index.html" />
+        <link rel="icon" type="image/x-icon" href="../Images/logoBgRemoved.webp" href="../index.html" />
         <link rel="stylesheet" href="newBlogStyle.css">
-        <script type="text/javascript"
-                src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
     </head>
 
     <body>
@@ -31,8 +30,9 @@
                     <div
                          class="fixed navbar text-indigo-700 top-0 px-4 sm:px-8 py-4 ease-in-out duration-300 flex z-30 items-center justify-between w-full left-0">
                         <div class="leftSection">
-                            <a class="flex items-center" href="../index.html">
-                                <img src="../Images/New_Logo_2.png" alt="Moksh Logo" class="w-16 h-16" />
+                            <a class="flex items-center" href="../index.html"
+                               <img src="../Images/New_Logo_2.webp" alt="Moksh Logo" class="w-16 h-16" />
+                          
                                 <span
                                       class="ml-3 text-xl sm:text-2xl uppercase font-semibold text-indigo-600 projectName tracking-widest ease-in-out duration-300 hover:text-slate-900">Moksh</span>
                             </a>
@@ -42,8 +42,8 @@
 
                 </div>
 
-                <div class="blogWrapper mt-28 py-8 h-auto flex flex-col items-center">
-
+                <div class="blogWrapper mt-28 py-8 h-auto flex flex-col">
+                    <div> <a href="../Blogs/Blog.html"><img src="https://cdn-icons-png.flaticon.com/512/8636/8636668.png"/ height="50px" width="50px" class="image1"> </a></div> 
                     <div class="title px-3 flex flex-col items-center w-full">
 
                         <h1 class="text-center text-4xl mb-5 text-indigo-600 font-semibold ">
@@ -100,26 +100,10 @@
                     </div>
 
                     <div class="blogImage my-3">
-                        <img src="../Images/depression2.webp" alt="blogImage">
+                        <img src="../Images/depression2.webp" alt="blogImage" class="center">
                     </div>
 
-
-                    <div id="google_translate_element"></div>
-
-
-
-                    <!-- Add the script for initializing the translation widget -->
-                    <script type="text/javascript">
-                        function googleTranslateElementInit ()
-                        {
-                            new google.translate.TranslateElement( {
-                                pageLanguage: 'en',  // Set the default language of your website
-                                includedLanguages: 'es,fr,hi',  // Set the languages you want to include
-                                layout: google.translate.TranslateElement.InlineLayout.SIMPLE  // Choose the display layout
-                            }, 'google_translate_element' );
-                        }
-                    </script>
-
+                    <div id="google_element"></div>
 
                     <div class="blogDetails my-3 px-8 sm:px-24 text-justify text-slate-800 font-medium">
                         <p class="mb-4">
@@ -377,7 +361,7 @@
                             impose anything on anyone. He always says, "This
                             is my opinion; I am not
                             forcing anyone."
-                            <img src="../Images/camel.webp" alt="" class="h-56 w-56 my-4">
+                            <img src="../Images/camel.webp" alt="" class="h-56 w-56 my-4 center">
                         </p>
                         <p class="mb-4">
                             Let me tell you a story our Guru has told us. There was a person who had three sons. At that
@@ -445,7 +429,7 @@
                     </div>
 
                     <a href="../Blogs/Blog.html"
-                       class="my-5 p-6 rounded-md uppercase font-semibold bg-rose-600 text-white ease-in-out duration-300 hover:bg-gray-900">Back
+                       class="my-5 p-6 rounded-md uppercase font-semibold bg-rose-600 text-white ease-in-out duration-300 hover:bg-gray-900 center">Back
                         to
                         Blogs</a>
 
@@ -457,19 +441,16 @@
             </div>
 
         </div>
-        <script
-                type="text/javascript"
-                src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
         <script>
-            function googleTranslateElementInit ()
-            {
-                new google.translate.TranslateElement(
-                    { pageLanguage: "en" },
-                    "google_translate_element"
-                );
+            function loadGoogleTranslate() {
+              new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,hi,gu,ta,te,ur,as,bn,ks,kn,kok,ml,mni,mr,ne,or,pa,sa,sd,si,fr,ja,ko,ar,id,it,de',
+              }, 'google_element');
             }
-        </script>
+          </script>
+
         <script src="./blogs.js"></script>
         <script src="../commonScript.js"></script>
 

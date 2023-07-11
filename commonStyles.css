@@ -9,6 +9,7 @@
 
 .projectName {
   font-family: 'Arizonia', cursive;
+  text-shadow: 2px 3px 2px rgba(0,0,0,0.4);
 }
 
 /* Footer  */
@@ -115,4 +116,8 @@ footer {
     width: 120px;
     left: 40vw;
   }
+}
+
+.md\:hover\:scale-95:hover{
+  box-shadow: 5px 4px 20px 0px rgba(0,0,0,0.5);
 }
